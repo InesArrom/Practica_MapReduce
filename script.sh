@@ -1,6 +1,6 @@
 #! /bin/bash
 
-mkdir books
+sudo mkdir books
 cd books
 
 wget https://www.gutenberg.org/files/57654/57654-0.txt
