@@ -10,7 +10,8 @@ nltk.download('stopwords', quiet=True)
 signs = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
 # Creem les stopwords dels idiomes que tenim en els llibres
-stop_words = set(stopwords.words('catalan') + stopwords.words('spanish'))
+# no utilitzem stopwords.words('catalan') ja que no existeix
+stop_words = set(stopwords.words('spanish'))
 input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
 
 for line in input_stream:
